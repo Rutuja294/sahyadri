@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic form</title>
+  </head>
+  <body>
+    <form  action="/action_page.php">
+        <label>browsers:</label>
+        <input list="browsers">
+        <datalist id="browsers">
+            <option value="Edge">
+            <option value="Firefox"> 
+            <option value="Chrome"> 
+            <option value="opera">
+            <option value="Safari">          
+
+
+        </datalist>
+        <br>
+        <br>
+      <label>First Name:</label>
+      <input type="text" placeholder="enter your name:" />
+      <br />
+      <br />
+      <label>Last Name:</label>
+      <input type="text" placeholder="enter your lastname:" />
+      <br />
+      <br />
+      <label>Password:</label>
+      <input type="password" placeholder="password:" />
+      <br />
+      <br />
+      <label>Email:</label>
+      <input type="email" placeholder="enter your email:" />
+      <br />
+      <br />
+      <label>Date:</label>
+      <input type="date" placeholder="Date" name="datemax" max="2003/04/29" />
+      <br />
+      <label>time:</label>
+      <input type="time" placeholder="time"/>
+      <label>Search:</label>
+      <input type="search" placeholder="search" />
+      <br />
+      <label>Range:</label>
+      <input type="range" placeholder="range" />
+      <br />
+      <label>Hide:</label>
+      <input type="hidden" placeholder="Hide" />
+      <br />
+      <label>URL:</label>
+      <input type="url" placeholder="URL" />
+      <br />
+      <label>Week:</label>
+      <input type="week" placeholde="Week" />
+      <br />
+
+      <br />
+      <label>fav_language:</label><br>
+      <input type="radio" id="html" name="fav_language" value="HTML">
+      <label for="html">HTML</label><br>
+      <input type="radio" id="css" name="fav_language" value="CSS">
+      <label for="css">CSS</label><br>
+      <input type="radio" id="js" name="fav_language" value="Javascript">
+      <label for="js">Javascript</label><br>
+      <label>Vehicle:</label><br>
+      <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+      <label for="vehicle1">I have a Bike</label><br>
+      <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+      <label for="vehicle2">I have a Car</label><br>
+      <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+      <label for="vehicle2">I have a Boat</label><br>
+      <label form="cars">Choose a car:</label>
+      <select id="cars" name="cars">
+        <option value="Valvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi"selected>Audi</option>
+      </select><br>
+      <textarea name="massage" rows="10" cols="30">
+        The cat was playing in the garden
+      </textarea><br>
+      <button type="button" onclick="alert('Hello world!')">Click Me!</button><br>
+
+      <input type="submit" /> <br>
+      <hr>
+      <label for="fname">First Name: </label><br>
+      <input type="text" id="fname" name="fname" value="John" disabled><br>
+      <label for="lname">Last Name: </label><br>
+      <input type="text" id="lname" name="lname" value="Doe"><br>
+    </form>
+    <form>
+        <label for="files"></label>
+    </form>
+  </body>
+</html>
